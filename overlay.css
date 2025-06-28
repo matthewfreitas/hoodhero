@@ -1,0 +1,113 @@
+/* overlay.css - Hood Hero Retro Minimal Style (Updated) */
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden; /* Prevent scrollbars if content slightly overflows */
+  background-color: #e0e0e0 !important; /* Solid gray background for html/body inside iframe */
+}
+
+#options-optimizer-overlay {
+  position: absolute !important; /* Position relative to iframe's body */
+  top: 0 !important; /* Position at top of iframe */
+  right: 0 !important; /* Position at right of iframe */
+  width: 100% !important; /* Fill iframe width */
+  height: 100% !important; /* Fill iframe height */
+  background-color: #e0e0e0 !important; /* Light gray background, same as popup */
+  border: 1px solid #c0c0c0 !important; /* Slightly darker gray border, same as popup */
+  border-radius: 5px !important;
+  z-index: 99999 !important;
+  padding: 20px !important;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) !important; /* Soft shadow, same as popup */
+  font-family: 'Roboto Mono', 'Courier New', monospace !important; /* Retro tech font */
+  color: #333 !important; /* Dark grey text */
+  line-height: 1.5 !important;
+  box-sizing: border-box; /* Include padding in width/height */
+  /* Removed: opacity: 0.95 !important; */
+}
+
+html body #options-optimizer-overlay h3 {
+  font-size: 1.4em !important;
+  text-align: center !important;
+  margin-bottom: 15px !important;
+  color: #444 !important; /* Darker heading */
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+html body #options-optimizer-overlay p {
+  margin-bottom: 8px !important;
+  font-size: 0.95em !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+html body #options-optimizer-overlay label {
+  display: block !important;
+  margin-bottom: 3px !important;
+  font-weight: bold !important;
+  color: #555 !important;
+}
+
+html body #options-optimizer-overlay input[type="number"] {
+  width: 80px !important; /* Fixed width for input */
+  padding: 6px !important;
+  border: 1px solid #aaa !important;
+  border-radius: 3px !important;
+  background-color: #fff !important;
+  color: #333 !important;
+  font-size: 0.9em !important;
+  outline: none !important;
+  transition: border-color 0.2s ease !important;
+  text-align: right !important;
+}
+
+html body #options-optimizer-overlay input[type="number"]:focus {
+  border-color: #007bff !important; /* Subtle blue focus */
+}
+
+html body #options-optimizer-overlay button {
+  background-color: #6c757d !important; /* Muted grey for general buttons */
+  color: white !important;
+  padding: 8px 12px !important;
+  border: none !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  font-size: 0.9em !important;
+  margin-top: 10px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+html body #options-optimizer-overlay button:hover {
+  background-color: #5a6268 !important;
+}
+
+html body #options-optimizer-overlay #close-overlay {
+  background-color: #dc3545 !important; /* Keeping red for close, but can be muted if desired */
+  display: block !important;
+  width: 100% !important;
+  margin-top: 15px !important;
+}
+
+html body #options-optimizer-overlay #close-overlay:hover {
+  background-color: #c82333 !important;
+}
+
+html body #options-optimizer-overlay #copy-profit, html body #options-optimizer-overlay #copy-stop-loss {
+  background-color: #28a745 !important; /* Keeping green for copy, but can be muted if desired */
+  margin-left: 10px !important;
+  padding: 4px 8px !important;
+  font-size: 0.8em !important;
+}
+
+html body #options-optimizer-overlay #copy-profit:hover, html body #options-optimizer-overlay #copy-stop-loss:hover {
+  background-color: #218838 !important;
+}
+
+html body #options-optimizer-overlay .caption-text {
+  font-size: 0.75em !important;
+  opacity: 0.7 !important;
+  margin-top: 3px !important;
+  color: #666 !important;
+}

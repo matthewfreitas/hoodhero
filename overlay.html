@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="overlay.css">
+</head>
+<body style="background-color: transparent;">
+  <div id="options-optimizer-overlay">
+    <h3>Hood Hero</h3>
+    <p>Current Option Price: <span id="current-price">N/A</span></p>
+    <div>
+      <label for="profit-percent">Take Profit (%):</label>
+      <input type="number" id="profit-percent" value="20">
+    </div>
+    <div>
+      <label for="stop-loss-percent">Stop Loss (%):</label>
+      <input type="number" id="stop-loss-percent" value="10">
+    </div>
+    <p>Target Profit Price: <span id="target-profit-price">N/A</span> <button id="copy-profit">Copy</button></p>
+    <p>Target Stop Loss Price: <span id="target-stop-loss-price">N/A</span> <button id="copy-stop-loss">Copy</button></p>
+    <button id="refresh-price">Refresh Price</button>
+    <button id="close-overlay">Close</button>
+  </div>
+  <script src="overlay.js"></script>
+</body>
+</html>
